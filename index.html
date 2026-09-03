@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Griffin Brothers Properties</title>
+  <meta name="description" content="Griffin Brothers Properties — family-owned commercial real estate ownership and development in the Shoals." />
+
+  <link rel="icon" type="image/png" href="img/favicon.png">
+
+  <!-- Preconnects speed up the first font & CDN requests -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+
+  <!-- Preload the hero background so it paints immediately -->
+  <link rel="preload" as="image" href="img/hero.jpeg" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress-bar" id="scrollProgress"></div>
+
+  <!-- Persistent Glassmorphism Navigation Bar -->
+  <header class="header" id="navbar">
+    <div class="header-container">
+      <a href="#home" class="brand-logo">
+        <div class="brand-logo-image">
+          <img src="img/logo.png" alt="Griffin Brothers Properties">
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#home" class="nav-item">HOME</a>
+        <a href="#division" class="nav-item">DIVISIONS</a>
+        <a href="#locations" class="nav-item">PROPERTY LOCATIONS</a>
+        <a href="#gallery" class="nav-item">GALLERY</a>
+        <a href="#about" class="nav-item">ABOUT</a>
+        <a href="#contact" class="nav-item">CONTACT</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#contact" class="btn btn-primary magnetic-btn">
+          <span class="btn-text">LET'S TALK</span>
+          <i class="fa-solid fa-arrow-right-long btn-icon"></i>
+        </a>
+        <button class="mobile-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobileDrawer">
+    <nav class="mobile-nav">
+      <a href="#home" class="drawer-link">HOME</a>
+      <a href="#division" class="drawer-link">DIVISIONS</a>
+      <a href="#locations" class="drawer-link">PROPERTY LOCATIONS</a>
+      <a href="#gallery" class="drawer-link">GALLERY</a>
+      <a href="#about" class="drawer-link">ABOUT</a>
+      <a href="#contact" class="drawer-link">CONTACT</a>
+      <a href="#contact" class="btn btn-primary drawer-btn">
+        <span class="btn-text">LET'S TALK</span>
+        <i class="fa-solid fa-arrow-right-long btn-icon"></i>
+      </a>
+    </nav>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="home">
+    <div class="hero-bg-wrapper">
+      <div class="hero-bg-image" id="heroImage"></div>
+    </div>
+
+    <div class="hero-scrim"></div>
+
+    <div class="hero-container">
+      <div class="hero-wrapper">
+        <h1 class="hero-headline" aria-label="We Own It. We Build It. We Make It Work.">
+          <span class="line-mask"><span class="reveal-line">WE OWN IT.</span></span>
+          <span class="line-mask"><span class="reveal-line">WE BUILD IT.</span></span>
+          <span class="line-mask"><span class="reveal-line">WE MAKE IT WORK.</span></span>
+        </h1>
+
+        <div class="hero-rule-box" id="heroRule">
+          <div class="rule-line left"></div>
+          <div class="rule-emblem">
+            <img class="icon" src="img/favicon.png" alt="" width="38" height="38">
+          </div>
+          <div class="rule-line right"></div>
+        </div>
+
+        <p class="hero-subtext" id="heroSubtext">
+          Commercial real estate ownership and development in the Shoals.
+        </p>
+
+        <div class="hero-buttons" id="heroButtons">
+          <a href="#properties" class="btn btn-primary magnetic-btn">
+            <span class="btn-text">VIEW OUR PROPERTIES</span>
+            <i class="fa-solid fa-arrow-right-long btn-icon"></i>
+          </a>
+          <a href="#division" class="btn btn-secondary magnetic-btn">
+            <span class="btn-text">EXPLORE OUR DIVISIONS</span>
+            <i class="fa-solid fa-arrow-right-long btn-icon"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HERITAGE / FAMILY STORY SECTION -->
+  <section class="heritage-section" id="about">
+    <div class="heritage-inner">
+      <div class="story-wrapper">
+
+        <!-- LEFT — FOUNDERS IMAGE -->
+        <div class="story-visual reveal-node">
+          <div class="sketch-backdrop"></div>
+          <span class="visual-corner visual-corner-tl"></span>
+          <span class="visual-corner visual-corner-br"></span>
+
+          <div class="founders-frame">
+            <div class="founders-image-wrap">
+              <img
+                src="img/Lynn and Jeff Griffin.png"
+                alt="Lynn and Jeff Griffin - Griffin Brothers Properties"
+                class="founders-img"
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div class="visual-caption">
+            <span class="caption-line"></span>
+            <span>EST. WITH PURPOSE</span>
+          </div>
+        </div>
+
+        <!-- RIGHT — STORY CONTENT -->
+        <div class="story-content reveal-node">
+          <div class="section-tagline">
+            <span class="tagline-text">FAMILY-OWNED. SHOALS-GROWN.</span>
+
+            <div class="heritage-signature-divider">
+              <span class="heritage-divider-line heritage-divider-left"></span>
+              <span class="heritage-divider-emblem">
+                <img src="img/favicon.png" alt="" class="heritage-divider-icon" loading="lazy">
+              </span>
+              <span class="heritage-divider-line heritage-divider-right"></span>
+            </div>
+
+            <h2 class="story-heading">
+              We're a family owned real estate company with deep roots in the Shoals.
+            </h2>
+
+            <p class="story-body">
+              Our approach is simple: build carefully, own for the long term,
+              and treat every property and tenant like it matters because to us,
+              it does.
+            </p>
+
+            <div class="story-signature">
+              <div class="signature-mark">
+                <img src="img/favicon.png" alt="" loading="lazy">
+              </div>
+              <div class="signature-text">
+                <strong>BUILT TO LAST</strong>
+                <small>Family. Property. Community.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR DIVISIONS SECTION -->
+  <section class="divisions-section" id="division">
+
+    <div class="divisions-divider reveal-node">
+      <div class="divider-emblem-wrap">
+        <span class="emblem-box">
+          <img src="img/favicon.png" alt="" class="divisions-emblem-image" loading="lazy">
+        </span>
+      </div>
+
+      <div class="divider-title-line">
+        <span class="divider-bar divider-bar-left"></span>
+        <h3 class="divisions-title">OUR DIVISIONS</h3>
+        <span class="divider-bar divider-bar-right"></span>
+      </div>
+    </div>
+
+    <div class="divisions-grid">
+      <!-- 1. Retail -->
+      <article class="division-card reveal-node">
+        <div class="card-img-wrap">
+          <img src="img/Retail.jpg" alt="Retail" loading="lazy" />
+          <div class="card-glass-shine"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <i class="fa-solid fa-bag-shopping card-icon"></i>
+            <h4 class="card-title">RETAIL</h4>
+          </div>
+          <p class="card-desc">
+            Well-located spaces for businesses that want to be seen, serve their customers, and grow.
+          </p>
+        </div>
+      </article>
+
+      <!-- 2. Flex -->
+      <article class="division-card reveal-node">
+        <div class="card-img-wrap">
+          <img src="img/Flex space.jpeg" alt="Flex" loading="lazy" />
+          <div class="card-glass-shine"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <i class="fa-solid fa-warehouse card-icon"></i>
+            <h4 class="card-title">FLEX</h4>
+          </div>
+          <p class="card-desc">
+            Flexible spaces built for businesses that need room to operate, adapt, and grow.
+          </p>
+        </div>
+      </article>
+
+      <!-- 3. Land Leases (Active Highlight) -->
+      <article class="division-card featured reveal-node">
+        <div class="card-img-wrap">
+          <img src="img/Land Leases.jpeg" alt="Land Leases" loading="lazy" />
+          <div class="card-glass-shine"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <i class="fa-solid fa-map-location-dot card-icon"></i>
+            <h4 class="card-title">LAND LEASES</h4>
+          </div>
+          <p class="card-desc">
+            Strategic land opportunities for businesses planning for the long term.
+          </p>
+        </div>
+      </article>
+
+      <!-- 4. Build To Suit -->
+      <article class="division-card reveal-node">
+        <div class="card-img-wrap">
+          <img src="img/Build to Suit.PNG" alt="Build To Suit" loading="lazy" />
+          <div class="card-glass-shine"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <i class="fa-solid fa-helmet-safety card-icon"></i>
+            <h4 class="card-title">BUILD TO SUIT</h4>
+          </div>
+          <p class="card-desc">
+            We build around your business, creating a space designed for how you work.
+          </p>
+        </div>
+      </article>
+
+      <!-- 5. Residential -->
+      <article class="division-card reveal-node">
+        <div class="card-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=800&auto=format&fit=crop"
+            alt="Residential"
+            loading="lazy"
+          />
+          <div class="card-glass-shine"></div>
+        </div>
+        <div class="card-body">
+          <div class="card-header">
+            <i class="fa-solid fa-building-user card-icon"></i>
+            <h4 class="card-title">RESIDENTIAL</h4>
+          </div>
+          <p class="card-desc">
+            Thoughtful residential communities designed for everyday living and long-term value.
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section class="gallery-section" id="gallery">
+    <div class="gallery-header reveal-item">
+      <div class="tag-divider-top">
+        <span class="line"></span>
+        <span class="tag-title">OUR WORK</span>
+        <span class="line"></span>
+      </div>
+      <h2 class="gallery-title">GALLERY</h2>
+      <p class="gallery-subtext">
+        A closer look at the properties we've built, leased, and brought to life across the Shoals.
+      </p>
+
+      <div class="gallery-filters" id="galleryFilters" role="tablist" aria-label="Filter gallery by category">
+        <button class="gallery-filter-btn active" data-filter="all" role="tab" aria-selected="true">All Work</button>
+        <button class="gallery-filter-btn" data-filter="retail" role="tab" aria-selected="false">Retail</button>
+        <button class="gallery-filter-btn" data-filter="development" role="tab" aria-selected="false">Development</button>
+        <button class="gallery-filter-btn" data-filter="office" role="tab" aria-selected="false">Office</button>
+        <button class="gallery-filter-btn" data-filter="residential" role="tab" aria-selected="false">Residential</button>
+      </div>
+    </div>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <div class="gallery-item gi-large reveal-item" data-category="retail development" data-caption="Wilson Crossing &bull; Retail Development">
+        <img src="img/g1.jpeg" alt="Retail development exterior" loading="lazy">
+        <span class="gallery-tag">Retail</span>
+        <div class="gallery-overlay">
+          <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+          <span class="gallery-caption">Wilson Crossing<small>Retail Development</small></span>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal-item" data-category="retail" data-caption="Shoppes on 2nd &bull; Storefront">
+        <img src="img/g2.png" alt="Storefront property" loading="lazy">
+        <span class="gallery-tag">Retail</span>
+        <div class="gallery-overlay">
+          <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+          <span class="gallery-caption">Shoppes on 2nd<small>Storefront</small></span>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal-item" data-category="development" data-caption="Build To Suit &bull; Construction">
+        <img src="img/g3.jpeg" alt="Building under construction" loading="lazy">
+        <span class="gallery-tag">Development</span>
+        <div class="gallery-overlay">
+          <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+          <span class="gallery-caption">Build To Suit<small>Construction</small></span>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal-item" data-category="office" data-caption="The Studio A &bull; Creative Office">
+        <img src="https://media.creativespaces.net.au/media/cache/small/6470bc9a1ad8d231570273.jpg" alt="Modern office interior" loading="lazy">
+        <span class="gallery-tag">Office</span>
+        <div class="gallery-overlay">
+          <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+          <span class="gallery-caption">The Studio A<small>Creative Office</small></span>
+        </div>
+      </div>
+
+      <div class="gallery-item gi-tall reveal-item" data-category="development" data-caption="Land Leases &bull; Site Development">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTumP_HtA57PQb90YnOOWe9KwJi8KAStOVwx-6bqqcd_7YWFVD1lhg4A7Q&s=10" alt="Land site aerial view" loading="lazy">
+        <span class="gallery-tag">Development</span>
+        <div class="gallery-overlay">
+          <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+          <span class="gallery-caption">Land Leases<small>Site Development</small></span>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal-item" data-category="retail" data-caption="Refine &bull; Retail &amp; Design">
+        <img src="https://images.unsplash.com/photo-1517502884422-41eaead166d4?q=80&w=900&auto=format&fit=crop" alt="Retail design storefront" loading="lazy">
+        <span class="gallery-tag">Retail</span>
+        <div class="gallery-overlay">
+          <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+          <span class="gallery-caption">Refine<small>Retail &amp; Design</small></span>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal-item" data-category="retail" data-caption="One Ride &bull; Retail &amp; Entertainment">
+        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=900&auto=format&fit=crop" alt="Retail entertainment venue" loading="lazy">
+        <span class="gallery-tag">Retail</span>
+        <div class="gallery-overlay">
+          <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+          <span class="gallery-caption">One Ride<small>Retail &amp; Entertainment</small></span>
+        </div>
+      </div>
+
+      <div class="gallery-item reveal-item" data-category="residential" data-caption="Residential &bull; Community Living">
+        <img src="https://images.unsplash.com/photo-1560184897-ae75f418493e?q=80&w=900&auto=format&fit=crop" alt="Residential community exterior" loading="lazy">
+        <span class="gallery-tag">Residential</span>
+        <div class="gallery-overlay">
+          <span class="gallery-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+          <span class="gallery-caption">Residential<small>Community Living</small></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery-empty" id="galleryEmpty">
+      <i class="fa-solid fa-image"></i>
+      <span>No projects in this category yet — check back soon.</span>
+    </div>
+  </section>
+
+  <!-- Gallery Lightbox -->
+  <div class="lightbox-overlay" id="lightboxOverlay">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close gallery preview">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+    <figure class="lightbox-figure">
+      <img src="" alt="" class="lightbox-image" id="lightboxImage">
+      <figcaption class="lightbox-caption" id="lightboxCaption"></figcaption>
+      <span class="lightbox-counter" id="lightboxCounter"></span>
+    </figure>
+  </div>
+
+  <!-- ================= LOCATIONS & FOOTER ================= -->
+  <div class="site-bottom-wrapper">
+
+    <!-- Our Property Locations Strip -->
+    <section class="locations-section" id="locations">
+      <div class="locations-header reveal-item">
+        <div class="tag-divider-top">
+          <span class="line"></span>
+          <span class="tag-title">WHERE WE BUILD</span>
+          <span class="line"></span>
+        </div>
+        <h2 class="locations-title">OUR PROPERTY LOCATIONS</h2>
+      </div>
+
+      <div class="locations-grid">
+        <div class="location-item reveal-item">
+          <div class="logo-box"><img src="img/1.png" alt="Shoppes on 2nd" loading="lazy"></div>
+          <span class="location-type">Retail</span>
+        </div>
+        <div class="location-item reveal-item">
+          <div class="logo-box"><img src="img/2.png" alt="Wilson Crossing" loading="lazy"></div>
+          <span class="location-type">Commercial</span>
+        </div>
+        <div class="location-item reveal-item">
+          <div class="logo-box"><img src="img/3.png" alt="One Ride" loading="lazy"></div>
+          <span class="location-type">Retail &bull; Entertainment</span>
+        </div>
+        <div class="location-item reveal-item">
+          <div class="logo-box"><img src="img/4.png" alt="Refine" loading="lazy"></div>
+          <span class="location-type">Retail &bull; Design</span>
+        </div>
+        <div class="location-item reveal-item">
+          <div class="logo-box studio-box"><img src="img/5.png" alt="The Studio A" loading="lazy"></div>
+          <span class="location-type">Office &bull; Creative</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dual Showcase Section -->
+    <section class="feature-split-section">
+      <div class="split-column left-about reveal-item">
+        <span class="section-tag">ABOUT US</span>
+        <h3 class="split-heading">
+          Rooted in the Shoals.<br />
+          Focused on the future.
+        </h3>
+
+        <div class="hero-rule-box" id="aboutRule">
+          <div class="rule-line left"></div>
+          <div class="rule-emblem">
+            <img class="icon" src="img/favicon.png" alt="" loading="lazy">
+          </div>
+          <div class="rule-line right"></div>
+        </div>
+
+        <p class="split-paragraph">
+          We're a local, family owned company that believes in doing things the right way. We build carefully, own with purpose, and create spaces where businesses and communities can thrive for years to come.
+        </p>
+      </div>
+
+      <div class="split-column center-wood reveal-item">
+        <div class="wood-bg" id="woodBg"></div>
+        <div class="wood-light-gradient"></div>
+        <div class="carved-crest-wrap">
+          <img style="height: auto; width: min(320px, 60vw);" src="img/favicon.png" alt="" loading="lazy">
+        </div>
+      </div>
+
+      <div class="split-column right-contact reveal-item">
+        <h3 class="contact-header">HAVE A PROPERTY IN MIND?</h3>
+        <p class="contact-desc">
+          We'd love to learn more about your property, project, or business and see how we can work together.
+        </p>
+
+        <a href="#contact" class="btn btn-primary interactive-btn">
+          <span>LET'S TALK</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <div class="contact-details">
+          <div class="contact-row">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:2563831010">256.383.1010</a>
+          </div>
+          <div class="contact-row">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:info@griffinbros.com">info@griffinbros.com</a>
+          </div>
+          <div class="contact-row">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>1620 Philadelphia Ave<br />Muscle Shoals, AL 35661</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+      <div class="contact-glow contact-glow-1"></div>
+      <div class="contact-glow contact-glow-2"></div>
+      <div class="contact-grid-overlay"></div>
+
+      <div class="contact-topbar reveal-item">
+        <div class="contact-stat">
+          <i class="fa-solid fa-bolt"></i>
+          <span><strong>1 Business Day</strong> Average Response</span>
+        </div>
+        <span class="contact-topbar-divider"></span>
+        <div class="contact-stat">
+          <i class="fa-solid fa-award"></i>
+          <span><strong>15+ Years</strong> in the Shoals</span>
+        </div>
+        <span class="contact-topbar-divider"></span>
+        <div class="contact-stat">
+          <i class="fa-solid fa-building-shield"></i>
+          <span><strong>Family Owned</strong> &amp; Operated</span>
+        </div>
+      </div>
+
+      <div class="contact-inner">
+
+        <div class="contact-form-col reveal-item">
+          <span class="section-tag">GET IN TOUCH</span>
+          <h2 class="contact-heading">Let's build something together.</h2>
+          <p class="contact-lead">
+            Tell us about your property, project, or business inquiry and a member of our team will follow up within one business day.
+          </p>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group has-icon">
+                <label for="cf-name">Full Name</label>
+                <div class="input-wrap">
+                  <i class="fa-solid fa-user"></i>
+                  <input type="text" id="cf-name" name="name" placeholder="Jane Doe" autocomplete="name" required>
+                  <i class="fa-solid fa-circle-check input-valid-icon"></i>
+                </div>
+                <span class="field-error">Please enter your name.</span>
+              </div>
+              <div class="form-group has-icon">
+                <label for="cf-email">Email Address</label>
+                <div class="input-wrap">
+                  <i class="fa-solid fa-envelope"></i>
+                  <input type="email" id="cf-email" name="email" placeholder="jane@email.com" autocomplete="email" required>
+                  <i class="fa-solid fa-circle-check input-valid-icon"></i>
+                </div>
+                <span class="field-error">Please enter a valid email.</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group has-icon">
+                <label for="cf-phone">Phone Number</label>
+                <div class="input-wrap">
+                  <i class="fa-solid fa-phone"></i>
+                  <input type="tel" id="cf-phone" name="phone" placeholder="(256) 000-0000" autocomplete="tel">
+                  <i class="fa-solid fa-circle-check input-valid-icon"></i>
+                </div>
+              </div>
+              <div class="form-group has-icon">
+                <label for="cf-interest">Interested In</label>
+                <div class="input-wrap">
+                  <i class="fa-solid fa-layer-group"></i>
+                  <select id="cf-interest" name="interest">
+                    <option value="Retail">Retail</option>
+                    <option value="Flex">Flex</option>
+                    <option value="Land Leases">Land Leases</option>
+                    <option value="Build To Suit">Build To Suit</option>
+                    <option value="Residential">Residential</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group full has-icon">
+              <label for="cf-message">Message</label>
+              <div class="input-wrap textarea-wrap">
+                <textarea id="cf-message" name="message" rows="5" maxlength="600" placeholder="Tell us a bit about your project..." required></textarea>
+              </div>
+              <div class="field-meta">
+                <span class="field-error">Please add a short message.</span>
+                <span class="char-counter" id="charCounter">0 / 600</span>
+              </div>
+            </div>
+
+            <div class="contact-submit-row">
+              <button type="submit" class="btn btn-primary contact-submit">
+                <span class="btn-label">SEND MESSAGE</span>
+                <i class="fa-solid fa-arrow-right-long btn-icon"></i>
+                <i class="fa-solid fa-circle-notch btn-spinner"></i>
+              </button>
+              <span class="submit-note"><i class="fa-solid fa-lock"></i> Your information stays private.</span>
+            </div>
+
+            <div class="form-success" id="formSuccess" role="status">
+              <i class="fa-solid fa-circle-check"></i>
+              <div>
+                <strong>Message sent.</strong>
+                <span>Thanks for reaching out we'll be in touch soon.</span>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="contact-info-col reveal-item">
+          <div class="contact-map-wrap">
+            <iframe
+              class="contact-map-img contact-map-frame"
+              src="https://maps.google.com/maps?q=1620+Philadelphia+Ave,+Muscle+Shoals,+AL+35661&z=15&output=embed"
+              title="Griffin Brothers Properties location map"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <a
+              href="https://maps.google.com/?q=1620+Philadelphia+Ave,+Muscle+Shoals,+AL+35661"
+              target="_blank"
+              rel="noopener"
+              class="contact-map-pin"
+            >
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Get Directions</span>
+            </a>
+          </div>
+
+          <div class="contact-quick-grid">
+            <a href="tel:2563831010" class="contact-quick-card">
+              <span class="quick-icon"><i class="fa-solid fa-phone"></i></span>
+              <span class="quick-label">Call Us</span>
+              <span class="quick-value">256.383.1010</span>
+            </a>
+            <a href="mailto:info@griffinbros.com" class="contact-quick-card">
+              <span class="quick-icon"><i class="fa-solid fa-envelope"></i></span>
+              <span class="quick-label">Email Us</span>
+              <span class="quick-value">info@griffinbros.com</span>
+            </a>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-card-head">
+              <h3 class="contact-info-heading">VISIT OR REACH US</h3>
+              <span class="office-status" id="officeStatus">
+                <span class="status-dot"></span>
+                <span class="status-text">Checking hours…</span>
+              </span>
+            </div>
+
+            <div class="contact-row">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>1620 Philadelphia Ave<br>Muscle Shoals, AL 35661</span>
+            </div>
+            <div class="contact-row">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:2563831010">256.383.1010</a>
+            </div>
+            <div class="contact-row">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:info@griffinbros.com">info@griffinbros.com</a>
+            </div>
+
+            <div class="contact-hours">
+              <strong>OFFICE HOURS</strong>
+              <span>Monday – Friday: 8:00 AM – 5:00 PM</span>
+            </div>
+
+            <div class="social-icons contact-social">
+              <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+      <div class="footer-container">
+        <div class="footer-col brand-col">
+          <a href="#home" class="brand-logo">
+            <div class="brand-logo-image">
+              <img src="img/logo.png" alt="Griffin Brothers Properties" loading="lazy">
+            </div>
+          </a>
+          <p class="brand-motto">Built on faith, family, and integrity.</p>
+        </div>
+
+        <span class="footer-divider" aria-hidden="true"></span>
+
+        <div class="footer-col links-col">
+          <h4 class="footer-heading">QUICK LINKS</h4>
+          <ul class="footer-nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#division">Divisions</a></li>
+            <li><a href="#locations">Property Locations</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <span class="footer-divider" aria-hidden="true"></span>
+
+        <div class="footer-col social-col">
+          <h4 class="footer-heading">LET'S CONNECT</h4>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <span class="footer-divider" aria-hidden="true"></span>
+
+        <div class="footer-col contact-col">
+          <div class="footer-contact-row">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:2563831010">256.383.1010</a>
+          </div>
+          <div class="footer-contact-row">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:info@griffinbros.com">info@griffinbros.com</a>
+          </div>
+          <div class="footer-contact-row">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>1620 Philadelphia Ave<br />Muscle Shoals, AL 35661</span>
+          </div>
+        </div>
+
+        <p class="footer-copyright">&copy; 2026 Griffin Brothers Properties. All rights reserved.</p>
+      </div>
+
+      <img class="footer-img-watermark" src="img/favicon.png" alt="" loading="lazy">
+    </footer>
+
+  </div>
+
+  <!-- Working Chat Widget -->
+  <div class="chat-widget" id="chatWidget">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <img src="img/favicon.png" alt="" class="chat-avatar" loading="lazy">
+        <div>
+          <strong>Griffin Brothers</strong>
+          <span>Typically replies within a day</span>
+        </div>
+      </div>
+      <button class="chat-close" id="chatClose" aria-label="Close chat">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="chat-body">
+      <div class="chat-bubble bot">
+        👋 Hi there! How can we help you today? Choose an option below or send us a message.
+      </div>
+
+      <div class="chat-quick-actions">
+        <a href="tel:2563831010" class="chat-quick-btn">
+          <i class="fa-solid fa-phone"></i> Call Us
+        </a>
+        <a href="https://wa.me/12563831010" target="_blank" rel="noopener" class="chat-quick-btn">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+        <a href="#contact" class="chat-quick-btn" id="chatGoContact">
+          <i class="fa-solid fa-envelope-open-text"></i> Contact Form
+        </a>
+      </div>
+    </div>
+
+    <form class="chat-input-row" id="chatMessageForm">
+      <input type="text" id="chatMessageInput" placeholder="Type your message..." required>
+      <button type="submit" aria-label="Send message">
+        <i class="fa-solid fa-paper-plane"></i>
+      </button>
+    </form>
+  </div>
+
+  <!-- Floating Action Buttons -->
+  <div class="floating-actions" id="floatingActions">
+    <a href="#" class="fab-btn fab-chat" id="fabChat" aria-label="Chat with us">
+      <i class="fa-solid fa-comment-dots"></i>
+      <span class="fab-tooltip">Chat with us</span>
+    </a>
+
+    <a href="https://wa.me/12563831010" target="_blank" rel="noopener" class="fab-btn fab-whatsapp" aria-label="WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+      <span class="fab-tooltip">WhatsApp</span>
+    </a>
+
+    <a href="mailto:info@griffinbros.com" class="fab-btn fab-mail" aria-label="Email us">
+      <i class="fa-solid fa-envelope"></i>
+      <span class="fab-tooltip">Email Us</span>
+    </a>
+
+    <a href="tel:2563831010" class="fab-btn fab-call" aria-label="Call us">
+      <i class="fa-solid fa-phone"></i>
+      <span class="fab-tooltip">Call Us</span>
+    </a>
+
+    <button class="fab-btn fab-top" id="backToTop" aria-label="Back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+  </div>
+
+  <!-- Scripts loaded with defer so they don't block rendering -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>
